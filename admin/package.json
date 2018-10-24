@@ -4,7 +4,9 @@
   "description": "WebUI for RethinkDB.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,7 @@
     "browserify": "^13.1.0",
     "coffeeify": "^2.0.0",
     "del": "^1.1.1",
-    "gulp": "^3.8.11",
+    "gulp": "^4.0.0",
     "gulp-changed": "^1.1.1",
     "gulp-less": "^3.0.1",
     "gulp-newer": "^0.5.0",
@@ -39,6 +41,8 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.0.0",
     "virtual-dom": "^2.0.1",
-    "yargs": "^3.4.5"
-  }
+    "yargs": "^3.4.5",
+    "snyk": "^1.104.2"
+  },
+  "snyk": true
 }
